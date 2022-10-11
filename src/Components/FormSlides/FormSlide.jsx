@@ -101,8 +101,8 @@ function ForthSlide({ onClick, data }) {
         <Button
           lable="Lunch Eden"
           onClick={() => {
-            alert('Form data is looged in the console');
             console.log('DATA :: ', data);
+            alert('Form data is looged in the console');
           }}
         />
       </div>
