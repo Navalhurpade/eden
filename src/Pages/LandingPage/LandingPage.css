@@ -1,0 +1,27 @@
+.layout-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    padding: 10%;
+    padding-top: max(7vh)
+}
+
+.logo {
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+    font-size: 24px;
+    color: var(--dart-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    display: inline;
+    height: 40px;
+    padding-right: 5px;
+}

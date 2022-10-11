@@ -1,0 +1,226 @@
+/* 
+ * CSS RESET 
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  --main-color:#664DE5;
+  --main-dark: #5c40e9;
+  --dart-text: #343434;
+  --medium-dark: #61666f;
+  --light-text: #8993A6
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: sans-serif
+}
+
+
+body {
+  height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.progress-bar {
+  margin: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle{
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid rgba(149, 157, 165, 0.2) 1px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.circle span {
+  margin: auto;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.line {
+  width: 33px;
+  height: 1.5px;
+  animation: all ease;
+  background-color: #ECEFF6;
+}
+.compleate {
+  background-color: var(--main-color) !important;
+  color: white;
+  }
+
+.title {
+ font-size: 1.6rem;
+ font-weight: bold;
+ color: var(--dart-text);
+ line-height: 200%;
+}
+
+.sub-text {
+  color: var(--light-text);
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+
+.form-container{ 
+  width: 340px;
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container label {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--medium-dark);
+  margin-bottom: 3px;
+}
+::placeholder,::-webkit-input-placeholder {
+ font-weight: 500;
+ font-size: 14px;
+ color: var(--light-text) !important ;
+}
+
+.input-box {
+  margin: 7px;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--main-color);
+  width: 96.5%;
+  margin-top: 17px;
+  padding: 9px;
+  font-size: small;
+}
+
+.button:hover {
+  transition: 0.2s ease-in;
+  background-color: var(--main-dark)
+}
+
+.input-prepend{
+  display: flex;
+  flex-direction: row;
+}
+
+.prepend {
+   background-color: '#F8F9FC';
+   font-size: 14px;
+   font-weight: 500;
+   color: var(--light-text);
+}
+
+.muted{
+  color: rgb(193, 193, 193);
+  font-size: small;
+}
+
+.choice-box {
+  border: solid var(--dart-text) 1.3px;
+  border-radius: 5px;
+  padding: 17px ;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 160px;
+  margin: 0 10px;
+  cursor: pointer;
+  animation: all ease;
+}
+.choice-box:hover {
+  border: solid var(--main-color) 1.37px;
+}
+
+.choice-box:hover svg > *  {
+  fill: var(--main-color);
+}
+
+.choice-box svg > * { 
+  fill: var(--dart-text)
+}
+
+.choice-box-active {
+  border: solid var(--main-color) 1.37px;
+}
+.choice-box-active svg > * {
+  fill: var(--main-color) !important;
+}
+
+.choice-box .logo {
+ height: 20px;
+ width: 20px;
+}
+
+.choice-box-title { 
+ margin-top: 15px;
+ font-weight: bold;
+ font-size: 13px;
+ color: var(--dart-text);
+}
+
+.choice-box-sub{
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--light-text);
+}
+
+.choice-box-container{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tikMark{
+  width: 45px;
+  height: 45px;
+  border-radius: 100%; 
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.tikMark img {
+  height: 15px;
+}
