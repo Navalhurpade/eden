@@ -1,6 +1,6 @@
 const Button = ({ lable = '', onClick }) => {
   return (
-    <button class="btn btn-primary button" onClick={onClick}>
+    <button className="btn btn-primary button" onClick={onClick}>
       {lable}
     </button>
   );
